@@ -1,0 +1,36 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: sqa_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_penjualan
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost", "-proot" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  frontend:
+    image: php:8.2-apache
+    container_name: sqa_frontend
+    restart: unless-stopped
+    ports:
+      - "18080:80"
+    environment:
+      API_BASE_URL: http://host.docker.internal:8000
+    volumes:
+      - ./frontend:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  db_data:
+
