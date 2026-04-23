@@ -1,0 +1,578 @@
+{
+  "id": "877f2f5a-98b3-4882-93f3-3e4f11ebceb0",
+  "version": "2.0",
+  "name": "sqa-ujian",
+  "url": "http://sqa-frontend.test:81",
+  "tests": [{
+    "id": "976a26e2-8f2d-44ab-a553-1ca05fb76a41",
+    "name": "TC-002",
+    "commands": [{
+      "id": "ddcb2f75-f0a4-4ac2-ba7f-7418a6e5991c",
+      "comment": "",
+      "command": "open",
+      "target": "/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a065298-fad6-4f49-a9bc-813918e3ee09",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1012x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4157e71d-150b-4cc2-9225-6e1749207245",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('username').value='admin'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4916b989-8e65-429f-af3f-1a6e769385e0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('password').value='admin123'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84fc293b-05f3-4dbf-998b-9f84747f64bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f94cdae-fa06-4860-a05c-427189eb9d40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-danger .btn",
+      "targets": [
+        ["css=.bg-danger .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Buka')])[4]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'transaksi.php')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5acf56a9-a37f-4a8b-b760-d83a092c96e2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Buat Transaksi Baru",
+      "targets": [
+        ["linkText=Buat Transaksi Baru", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Buat Transaksi Baru')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'transaksi_create.php')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Buat Transaksi Baru')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fbeeb09-d6bc-4c11-87ea-1df31cc61edb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=pelanggan_id",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f25d5aa7-41ae-482c-8564-5135e98bba5d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=produk_id",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e51b6cc0-4241-4ab5-a300-0dd149879bdc",
+    "name": "TC-001",
+    "commands": [{
+      "id": "db0f2080-d902-4e69-9aac-fefe7330d573",
+      "comment": "",
+      "command": "open",
+      "target": "/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86a2856e-de7a-49fc-b04d-ff5d877db422",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1012x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0be3a2d-fb04-485b-8811-04082bbd0d23",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('username').value='admin'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00dc8350-bbde-4b45-a80a-4e642b6df830",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('password').value='admin123'",
+      "targets": [],
+      "value": "admin123"
+    }, {
+      "id": "96a659a0-6c48-4113-924a-6fd573722c72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6d94ed08-6df9-4efe-afa2-a1b9ec0f9ddd",
+    "name": "TC-003",
+    "commands": [{
+      "id": "d52661e7-cc64-4fdb-a0e3-5a7a0d2e67de",
+      "comment": "",
+      "command": "open",
+      "target": "/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f27348cb-5cba-4f29-83f8-95dec974705d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1012x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c49858d-4d69-4ac7-9a77-3e36d458aedf",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('username').value='admin'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae04b842-ccc2-4e8a-bc94-125b3dd37310",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('password').value='admin123'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "273913c5-547d-4c87-bf04-9a345c248e10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5065ae94-a487-4ed5-aec6-68d3d14fe454",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-danger .btn",
+      "targets": [
+        ["css=.bg-danger .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Buka')])[4]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'transaksi.php')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce966be6-0a8f-4d9d-9ab6-ca066ece38a2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Buat Transaksi Baru",
+      "targets": [
+        ["linkText=Buat Transaksi Baru", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Buat Transaksi Baru')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'transaksi_create.php')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Buat Transaksi Baru')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "519e2b23-3f40-4a91-ab82-86d1afd010fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pelanggan_id > option:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d071c00-3f6d-42bf-b292-d09708ab604b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#produk_id > option:nth-child(2)",
+      "targets": [
+        ["css=#produk_id > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='1'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='produk_id']/option[2]", "xpath:idRelative"],
+        ["xpath=//body/div/div[3]/div/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Pensil 2B (Stok: 92)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7272adda-ae80-4791-b9fd-81401ef2a26c",
+      "comment": "",
+      "command": "type",
+      "target": "id=qty",
+      "targets": [
+        ["id=qty", "id"],
+        ["css=#qty", "css:finder"],
+        ["xpath=//input[@id='qty']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "9906f683-323f-431a-9a81-1fe99f781c0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnTambah",
+      "targets": [
+        ["css=.g-3", "css:finder"],
+        ["xpath=//body/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d784da0d-29b8-4802-b120-1db43cd7ef7a",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#keranjang tbody tr",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "6042984b-1e78-4853-a363-e4f7de2bba8f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#keranjang tbody tr:first-child td:nth-child(1)",
+      "targets": [],
+      "value": "Pensil 2B"
+    }, {
+      "id": "2556daa6-aef3-414d-8521-e8a3f06eb600",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#keranjang tbody tr:first-child td:nth-child(3)",
+      "targets": [],
+      "value": "2"
+    }]
+  }, {
+    "id": "465d2c96-2751-4a34-90e8-4df56fa4bddc",
+    "name": "TC-004",
+    "commands": [{
+      "id": "daf377fa-30e4-4ea1-8fc4-260cea0617d5",
+      "comment": "",
+      "command": "open",
+      "target": "/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f04ae928-34ce-405d-98a0-2fc7a4e89b08",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1012x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6bf9149-6a8c-4899-a658-de391b953e20",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('username').value='admin'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4fe270d-2540-42cf-ba41-8192b1feda0e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('password').value='admin123'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d2e44fa-a31f-40be-90c2-705ec02e8618",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "578c4225-ed49-432d-9335-3aee04a484f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-danger .btn",
+      "targets": [
+        ["css=.bg-danger .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Buka')])[4]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'transaksi.php')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b938231a-9e9a-4b80-8c64-65457c047a2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Buat Transaksi Baru",
+      "targets": [
+        ["linkText=Buat Transaksi Baru", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Buat Transaksi Baru')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'transaksi_create.php')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Buat Transaksi Baru')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0638a8b1-791a-4555-945c-7ae373e983b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pelanggan_id > option:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97601a76-d9f3-43c4-b598-1dffd587f9d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#produk_id > option:nth-child(2)",
+      "targets": [
+        ["css=#produk_id > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='1'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='produk_id']/option[2]", "xpath:idRelative"],
+        ["xpath=//body/div/div[3]/div/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Pensil 2B (Stok: 92)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42aa3326-4fc7-4360-bab0-119b34b7fbfd",
+      "comment": "",
+      "command": "type",
+      "target": "id=qty",
+      "targets": [
+        ["id=qty", "id"],
+        ["css=#qty", "css:finder"],
+        ["xpath=//input[@id='qty']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "c80eabaf-517c-475b-8ebb-e2d73f380fd0",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnTambah",
+      "targets": [
+        ["css=.g-3", "css:finder"],
+        ["xpath=//body/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "880b7f85-128c-48eb-9258-eb389aeb91f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#metode_pembayaran > option:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0172cfd5-9433-4336-8930-b944b0ee959a",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnSimpan",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f793bd11-5e20-48b0-ae02-55b91d464e31",
+    "name": "TC-005",
+    "commands": [{
+      "id": "9f1f3518-2f0d-4053-9edf-2f7da7876671",
+      "comment": "",
+      "command": "open",
+      "target": "/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29956709-e8b7-4a2a-a80e-c9a95327cae9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1012x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4eba9b8-61b4-490e-9430-710868bb89c9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('username').value='admin'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfde4c45-fd85-464b-a06f-3a7db0fd1e93",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('password').value='admin123'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0d2349b-3d38-408b-8600-53a80c06cf6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f419bb04-9bab-488f-bd7d-5bd73cbaf891",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-danger .btn",
+      "targets": [
+        ["css=.bg-danger .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Buka')])[4]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'transaksi.php')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "456a6a39-94f7-4a14-9007-59d862f0dc6c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Buat Transaksi Baru",
+      "targets": [
+        ["linkText=Buat Transaksi Baru", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Buat Transaksi Baru')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'transaksi_create.php')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Buat Transaksi Baru')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddb023aa-4903-4c07-b6ac-29b8d727bbf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pelanggan_id > option:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9f8bdff-0c4a-42ca-9677-d109398471bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#produk_id > option:nth-child(2)",
+      "targets": [
+        ["css=#produk_id > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='1'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='produk_id']/option[2]", "xpath:idRelative"],
+        ["xpath=//body/div/div[3]/div/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Pensil 2B (Stok: 92)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaa15503-d4e0-49b5-9308-dcb939238559",
+      "comment": "",
+      "command": "type",
+      "target": "id=qty",
+      "targets": [
+        ["id=qty", "id"],
+        ["css=#qty", "css:finder"],
+        ["xpath=//input[@id='qty']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "6177767c-6f8e-4a28-935b-4aba3e04591b",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnTambah",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e54859ef-3321-44d4-aa7b-eeb28548549d",
+    "name": "TC-006",
+    "commands": [{
+      "id": "fe9c0558-78c5-4328-9aea-7b8c83babeac",
+      "comment": "",
+      "command": "open",
+      "target": "/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8134c1fe-8b3f-414a-a204-76213e345784",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1012x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c14d4768-7a38-42fe-ac29-352d5af5883c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('username').value='admin'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "551082eb-b86e-4b0b-b233-38c8b3e6d9aa",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('password').value='admin123'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a505af54-83e4-4c5c-bfb5-5bfbf53b1cd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d61a3bdf-7cdc-4cf9-a18b-3deb17a58049",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'logout.php')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "891d92d4-f62f-416d-bb66-97ae90a43fb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c727fc1b-05de-469a-9efd-fa6c70fcd2a5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["976a26e2-8f2d-44ab-a553-1ca05fb76a41"]
+  }],
+  "urls": ["http://sqa-frontend.test:81/"],
+  "plugins": []
+}
